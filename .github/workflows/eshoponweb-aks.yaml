@@ -23,7 +23,7 @@ jobs:
 
       - name: Build and Push Image
         run: |
-          docker build -f scr/web/Dockerfile t -${{env.ACR_LOGIN_SERVER}}/${{env.TAG_NAME}} .
+          docker build -f scr/Web/Dockerfile t -${{env.ACR_LOGIN_SERVER}}/${{env.TAG_NAME}} .
           docker push ${{env.ACR_LOGIN_SERVER}}/${{env.TAG_NAME}}
 
 
